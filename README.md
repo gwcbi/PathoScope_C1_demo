@@ -39,6 +39,12 @@ pathoscope.py --help
 
 # **TODO: Get a file from SRA**
 
+```
+    wget ftp://sra
+    module load sra
+    fastq-dump 
+```
+
 _**Have the user download an SRA file using FTP, then run FASTQ dump.**_
 
 ### Get data and get reference genomes
@@ -60,7 +66,11 @@ _**Show user where the reference databases are and tell them how to correctly co
 
 >>> As target library, you can use any multi fasta file containing full or draft genomes, or even nucleotide entries from NCBI, and combinations of both. The only condition is that the fasta entries start with the taxonomy ID from NCBI as follows:
 
->>>Originally:  \>gi|40555938|ref|NC_005309.1| Canarypox virus, complete genome  >>>but PathoScope likes:  \>ti|44088|gi|40555938|ref|NC_005309.1| Canarypox virus, complete genome  
+>>>Originally:  
+\>gi|40555938|ref|NC_005309.1| Canarypox virus, complete genome  
+
+>>>but PathoScope likes:  
+\>ti|44088|gi|40555938|ref|NC_005309.1| Canarypox virus, complete genome  
 
 >>>You could do this very easily in **PathoLib**:
 
