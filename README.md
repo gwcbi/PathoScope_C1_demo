@@ -43,6 +43,7 @@ pathoscope.py --help
     wget ftp://sra
     module load sra
     fastq-dump 
+    adsabjfhalsfakf;ksnafk;anfo
 ```
 
 _**Have the user download an SRA file using FTP, then run FASTQ dump.**_
